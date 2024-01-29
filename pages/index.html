@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="../stylesheets/base.css">
+</head>
+<body>
+    <div class="hero-ui-wrapper">
+        <div class="hero-section">
+            <div class="hero-heading">Discover the weather of every city.</div>
+            <div class="search-wrapper">
+                <input type="text" class="text-search" id="weather-search" placeholder="London,UK"/>
+                <div class="icon-wrapper" id="weather-search-btn">
+                    <img src="../graphics/search.svg" alt="">
+                </div>
+            </div>
+            <div class="" id="loading-circle"></div>
+            <div class="error-box"></div>
+            <div class="weather-report-area" id="weather-data">
+                <div class="current-weather-preview">
+                    <div class="day-of-report">Today</div>
+                    <div class="today-weather-value">
+                        <div class="weather-icon">
+                            <img src="../graphics/2682848_day_forecast_sun_sunny_weather_icon.svg" alt="">
+                        </div>
+                        <div class="weather-value-wrapper">
+                            <div class="weather-value">--</div>
+                            <span class="degree">°C</span>
+                        </div>
+                    </div>
+                    <div class="weather-desc">--</div>
+                </div>
+                <div class="current-city">
+                    --
+                </div>
+            </div>
+            <div class="additional-info">
+                <div class="additional-param">
+                    <div class="subject-icon">
+                        <img src="../graphics/wind.svg" alt="">
+                    </div>
+                    <div class="subject-details">
+                        <div class="subject-name">Wind Speed</div>
+                        <div class="subject-value" id="wind-speed">N/A</div>
+                    </div>
+                </div>
+                <div class="additional-param">
+                    <div class="subject-icon">
+                        <img src="../graphics/humidity-01.svg" alt="">
+                    </div>
+                    <div class="subject-details">
+                        <div class="subject-name">Humidity</div>
+                        <div class="subject-value" id="humidity">N/A</div>
+                    </div>
+                </div>
+                <div class="additional-param">
+                    <div class="subject-icon">
+                        <img src="../graphics/feels-like.svg" alt="">
+                    </div>
+                    <div class="subject-details">
+                        <div class="subject-name">Feels Like</div>
+                        <div class="subject-value" id="feels-like">N/A</div>
+                    </div>
+                </div>
+                <!-- <div class="additional-param">
+                    <div class="subject-icon">
+                        <img src="../graphics/meter.svg" alt="">
+                    </div>
+                    <div class="subject-details">
+                        <div class="subject-name">Barometer</div>
+                        <div class="subject-value">N/A</div>
+                    </div>
+                </div> -->
+                <div class="additional-param">
+                    <div class="subject-icon">
+                        <img src="../graphics/3741353_weather_cloud_foggy_icon.svg" alt="">
+                    </div>
+                    <div class="subject-details">
+                        <div class="subject-name">Cloud Percentage</div>
+                        <div class="subject-value" id="cloud-percentage">N/A</div>
+                    </div>
+                </div>
+                <!-- <div class="additional-param">
+                    <div class="subject-icon">
+                        <img src="../graphics/drewpoint-03.svg" alt="">
+                    </div>
+                    <div class="subject-details">
+                        <div class="subject-name">Drewpoint</div>
+                        <div class="subject-value">N/A</div>
+                    </div>
+                </div> -->
+                <div class="additional-param">
+                    <div class="subject-icon">
+                        <img src="../graphics/visibility-2.svg" alt="">
+                    </div>
+                    <div class="subject-details">
+                        <div class="subject-name">Visibility</div>
+                        <div class="subject-value" id="visibility">N/A</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Made with ❤️ by </p><a href="/"> Sherriz.com</a> <p>in Pakistan.</p>
+        </div>
+    </div>
+    <script src="../scripts/app.js"></script>
+</body>
+</html>
